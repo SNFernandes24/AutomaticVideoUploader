@@ -4,3 +4,5 @@
 /.vscode
 /.plan.txt
 /chromedriver.exe
+/__pycache__
+/RedditDownload

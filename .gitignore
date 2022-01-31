@@ -4,5 +4,6 @@
 /.vscode
 /.plan.txt
 /chromedriver.exe
-/__pycache__
+*.pyc
+__pycache__/
 /RedditDownload

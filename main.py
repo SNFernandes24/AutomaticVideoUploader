@@ -1,6 +1,6 @@
 #! python3
 from googleapiclient.errors import HttpError
-from redditScraper import getTwitchClips
+from redditFetch import getTwitchClips
 from uploadToYoutube import get_authenticated_service, initialize_upload
 from automateDownload import autoDownloadFile
 from clearFiles import clearDirectory

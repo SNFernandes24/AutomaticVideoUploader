@@ -17,6 +17,7 @@
   
   Get the reddit client_id, client_secret, user_agent, username, password, subreddit in one file and name it RedditSecret.py insert this file into the 'Secret' folder.
   It should look like:
+  
     ```
     CLIENT_ID = 'client_id here'
     CLIENT_SECRET = 'client_secret here'

@@ -1,6 +1,8 @@
 # AutomaticVideoUploader
 
-## Fetches videos from your personal subreddit and uploads to youtube(**Twitch Clips Only**)
+### Fetches videos from your personal subreddit and uploads to youtube(**Twitch Clips Only**)
+
+    pip install -r requirements.txt
 
 # How to use
   Create a folder named 'Secret' inside 'AutomaticVideoUploader'

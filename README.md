@@ -11,12 +11,12 @@
   
   ### Youtube
     
-    Copy the 'client_secret.json' file inside the 'Secret' folder and rename it to 'YoutubeSecrets.json'
+  Copy the 'client_secret.json' file inside the 'Secret' folder and rename it to 'YoutubeSecrets.json'
   
   ### Reddit
   
-    Get the reddit client_id, client_secret, user_agent, username, password, subreddit in one file and name it RedditSecret.py insert this file into the 'Secret' folder.
-    It should look like:
+  Get the reddit client_id, client_secret, user_agent, username, password, subreddit in one file and name it RedditSecret.py insert this file into the 'Secret' folder.
+  It should look like:
     ```
     CLIENT_ID = 'client_id here'
     CLIENT_SECRET = 'client_secret here'
@@ -27,7 +27,7 @@
     ```
   ### GMAIL
     
-    Similar to Youtube you will need to copy the 'client_secret.json' in 'Secret' Folder and rename it to 'EmailSecret.json' you may be able to just use the same one as youtube     if you enable GMAIL API on it
+  Similar to Youtube you will need to copy the 'client_secret.json' in 'Secret' Folder and rename it to 'EmailSecret.json' you may be able to just use the same one as youtube     if you enable GMAIL API on it
     
 ## Other files in 'Secret' Folder
   
@@ -51,7 +51,7 @@
   Download chromedriver.exe for the version your chrome browser runs on here: https://chromedriver.chromium.org/downloads
   Copy it into 'AutomaticVideoUploader' directory
   
-## Reddit Fetch
+## redditFetch.py
 
   By default the code fetches top three post from 'day' and makes sure they are Twitch clips.
   It is possible to change from 'day' to other criteria and the amount of posts to fetch, but it will not check until it gets the required amount of clips.

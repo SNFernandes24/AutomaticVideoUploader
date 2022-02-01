@@ -1,5 +1,5 @@
 import praw
-from Secret.redditSecret import *
+from Secret.RedditSecret import *
 
 def getTwitchClips():
     clip_dict = {}

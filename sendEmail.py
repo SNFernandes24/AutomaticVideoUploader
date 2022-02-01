@@ -55,12 +55,19 @@ def create_message(sender, to, subject, message_text):
     b64_string = b64_bytes.decode()
     return {'raw': b64_string}
 
-def main():
+def create_message_string(clips):
+    message = ''
+    for clip in clips:
+        message += f'\nSuccessfully uploaded file with tite: {clip} found at: {clips[clip]} from Twitch clips.\n'
+    return message
+    
+def sendEmail(clips):
     try:
         # Call the Gmail API
-        subject = 'Uploaded files at: {}'.format()
-        message = create_message(SENDER, TO_EMAIL, 'lorem ipsum', 'abc')
-       
+        subject = 'Uploaded files at: {}'.format(datetime.datetime.now())
+        message_text = create_message_string(clips)
+        message = create_message(SENDER, TO_EMAIL, subject, message_text)
+
         authunt = auth()
         service = build('gmail', 'v1', credentials=authunt)
         results = (service.users().messages().send(userId='me', body=message).execute())
@@ -70,6 +77,3 @@ def main():
     except HttpError as error:
         # TODO(developer) - Handle errors from gmail API.
         print(f'An error occurred: {error}')
-
-if __name__ == '__main__':
-    main()

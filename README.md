@@ -18,14 +18,13 @@
   Get the reddit client_id, client_secret, user_agent, username, password, subreddit in one file and name it RedditSecret.py insert this file into the 'Secret' folder.
   It should look like:
   
-    ```
     CLIENT_ID = 'client_id here'
     CLIENT_SECRET = 'client_secret here'
     USER_AGENT = 'user_agent here'
     USERNAME = 'username here'
     PASSWORD = 'password here'
     SUBREDDIT = 'subreddit here'
-    ```
+
   ### GMAIL
     
   Similar to Youtube you will need to copy the 'client_secret.json' in 'Secret' Folder and rename it to 'EmailSecret.json' you may be able to just use the same one as youtube     if you enable GMAIL API on it
